@@ -2,11 +2,10 @@
 
 **A time-traveling web explorer with a Windows 98 aesthetic.**
 
-NetStumblr 98 allows users to "stumble" upon forgotten corners of the early internet. From personal Geocities neighborhoods to the original Space Jam website, explore the web as it was meant to be seen: on a CRT monitor at 800x600.
+NetStumblr 98 allows users to "stumble" upon forgotten corners of the early internet. From personal Geocities neighborhoods to the original Space Jam website, explore the web as it was meant to be seen: on a CRT monitor.
 
 ## 📺 Features
 
-*   **Authentic Windows 98 UI**: Pixel-perfect buttons, dialogs, and window chrome.
 *   **CRT Monitor Simulation**: Custom CSS shader effect with RGB subpixel masking, scanlines, and tube curvature.
 *   **Hybrid Time-Travel Engine**: Intelligently switches between "Live" surviving websites (for instant loading) and specific "Golden Era" Wayback Machine snapshots.
 *   **Curated "Deep Web" Database**: Hand-picked seed list including Geocities neighborhoods, Webrings, and obscure personal sites to ensure high-quality randomness.
@@ -31,8 +30,8 @@ NetStumblr 98 allows users to "stumble" upon forgotten corners of the early inte
 
 1.  **Clone the repository**
     ```bash
-    git clone https://github.com/dangoodingoo/Randomness.git
-    cd Randomness
+    git clone https://github.com/dangoodingoo/NetStumblr-98.git
+    cd NetStumblr-98
     ```
 
 2.  **Install dependencies**
