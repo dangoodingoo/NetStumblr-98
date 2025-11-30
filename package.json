@@ -1,0 +1,32 @@
+{
+  "name": "netstumblr98",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A retro-styled, high-speed explorer for the forgotten web. Instantly stumble upon random archived websites from the 90s and early 2000s.",
+  "keywords": [
+    "react",
+    "retro",
+    "windows98",
+    "archive",
+    "wayback-machine",
+    "internet-history"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.344.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.6"
+  }
+}

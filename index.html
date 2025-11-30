@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NetStumblr 98</title>
+    <!-- Kept Tailwind CDN for simplicity, though compiled CSS is usually better for production -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+      /* Force "Rough" Pixelated Rendering Globally */
+      * {
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: pixelated;
+        -ms-interpolation-mode: nearest-neighbor;
+        
+        /* Disable font antialiasing completely for that jagged look */
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeSpeed;
+      }
+      
+      /* Ensure SVGs render with hard edges */
+      svg {
+        shape-rendering: crispEdges;
+      }
+
+      body {
+        background-color: #000;
+        margin: 0;
+        overflow: hidden;
+      }
+      /* Custom Scrollbar for Retro Feel */
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #acaeb4;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #acaeb4;
+        border: 2px solid #fff;
+        border-right-color: #404040;
+        border-bottom-color: #404040;
+      }
+      .font-retro {
+        font-family: 'VT323', monospace;
+      }
+      .font-pixel {
+        font-family: 'Press Start 2P', monospace;
+      }
+      /* Authentic Windows 98 Font Rendering */
+      .font-win98 {
+        font-family: 'MS Sans Serif', 'Segoe UI', Tahoma, sans-serif;
+        letter-spacing: 0.5px;
+      }
+      /* Darker Grey Theme */
+      .win98-surface {
+        background-color: #acaeb4;
+      }
+      .win98-gradient {
+        background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
+      }
+      .win98-btn {
+        background-color: #acaeb4;
+        border-top: 2px solid #fff;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #404040;
+        border-bottom: 2px solid #404040;
+        box-shadow: 1px 1px 0px #000; 
+      }
+      .win98-btn:active {
+        border-top: 2px solid #404040;
+        border-left: 2px solid #404040;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        box-shadow: none;
+      }
+      .win98-inset {
+        border-top: 2px solid #404040;
+        border-left: 2px solid #404040;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        box-shadow: inset 1px 1px 0px #000;
+        background-color: #fff;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
