@@ -57,15 +57,13 @@ const App: React.FC = () => {
 
     // We only push state if we are creating a NEW entry or updating current?
     // Actually, to make "Back" work for iframe clicks, we rely on iframe pushing its own history,
-    // but cross-origin iframes don't push to main window history usually. 
+    // but cross-origin iframes don't push to main window history usually.
     // However, our internal navigation (Stumble, Back btn) should update URL hash or state object.
-    
-    const historyState = { index: currentIndex, url: currentState.currentUrl };
     
     // Check if we need to push or replace
     // This is tricky with iframe. Simple approach:
     // Just keep internal state. If we want browser back button to work for APP navigation:
-    // window.history.pushState(historyState, '');
+    // window.history.pushState({ index: currentIndex, url: currentState.currentUrl }, '');
   }, [currentIndex, currentState]);
 
   const handleIframeLoad = () => {
